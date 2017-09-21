@@ -1,0 +1,184 @@
+//slider
+.owl-carousel{
+        margin-top:10px;
+    }
+    .owl-stage-outer{
+     //height: 320px;
+    }
+    .owl-dots{
+}
+
+//titulos principales de las secciones
+h1{
+    font-family: $tit_sec_fam;
+    font-weight: $tit_sec_weight;
+    font-size: $tit_sec_size;
+    color: $tit_sec_color;
+    text-align: center;
+    text-transform: uppercase;
+}
+//subtitulos
+h2{
+    font-family: $sub_tit_fam;
+    font-weight: $sub_tit_weight;
+    font-size: $sub_tit_size;
+    color: $sub_tit_color;
+}
+p{
+    font-family: $par_fam;
+    font-weight: $par_weight;
+    font-size: $par_size;
+    color: $par_color;
+}
+
+//SECCION DEL PRESIDENT
+.presidenta{
+    background-color: #f4f4f4;
+    h1{
+        padding-top: 20px;
+    }
+    figure{
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    h2{
+        text-align: center;
+    }
+    p{
+        padding: 0 34px;
+        padding-bottom: 18px;
+    }
+}
+//Talleres
+.contenedor-talleres{
+    .titulo-talleres{
+        margin: 10px 0 0 0;
+    }
+    .talleres{
+        background-image: url(../img/whirlpool.png);
+        margin-top: 10px;
+
+        h2{
+           font-family: $tit_tal_fam;
+            font-weight: $tit_tal_weight;
+            font-size: $tit_tal_size;
+            color: $tit_tal_color;
+            padding-top: 9px;
+            margin: 0 0 0 21.5px;
+            text-transform: uppercase;
+
+        }
+        p{
+            margin: 2px 0 0 42px;
+        }
+        .interes{
+            font-family: $subtit_tal_fam;
+            font-weight: $subtit_tal_weight;
+            font-size: $subtit_tal_size;
+            color: $subtit_tal_color;
+            margin: 5px 0 0 32px;
+        }
+        .prof{
+            margin: 10px 0 0 32px;
+            padding-bottom: 11px;
+        }
+        figure{
+            text-align: center;
+            img{
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+            }
+            padding-bottom: 20px;
+        }
+        .adorno-tall{
+            position: relative;
+            /* Rectangle: */
+            height: 2px;
+            widows: 100%;
+            background-image: -webkit-linear-gradient(left, #FAD95F 0%, #EA9C00 100%);
+            background-image: -o-linear-gradient(left, #FAD95F 0%, #EA9C00 100%);
+            background-image: linear-gradient(to right, #FAD95F 0%, #EA9C00 100%);
+        }
+    }
+}
+//SECCIÓN DE BUSQUEDA
+.sec-busqueda{
+    h1{
+
+    }
+    ul{
+        font-family: $link_fam;
+        font-size: 16px;
+        padding: 0;
+        li{
+
+            list-style: none;
+            margin: 0 auto;
+            margin-top: 10px;
+
+                width: 100%;
+                max-width: 220px;
+            &:first-child{
+                margin-top: 0;
+            }
+            a{
+                display: block;
+                text-decoration: none;
+                color: white;
+                height: auto;
+                background-color: #2F6AA7;
+                padding: 15px 0 15px 10px;
+                width: 100%;
+                position: relative;
+                //vertical-align: middle;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 8px;
+                    height: 100%;
+                    background-color: #15579C;
+                    top: 0;
+                    right: 0;
+
+                }
+                i{
+                    //display: block;
+                    display:inline;
+                    position: absolute;
+                    right: 14px;
+                    top: 10px;
+                    font-size: 30px;
+                    vertical-align: middle;
+
+                }
+            }
+        }
+    }
+}
+.anuncio{
+    text-align: center;
+    img{
+
+    }
+}
+
+.galeria-imagen{
+    text-align: center;
+    img{
+        width: 100%;
+        //max-width: 240px;
+    }
+}
+
+//enlaces externo
+.enlaces-externos{
+    width: 100%;
+    .item{
+        img{
+
+        }
+    }
+}

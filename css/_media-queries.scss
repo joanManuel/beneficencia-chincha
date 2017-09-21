@@ -1,0 +1,52 @@
+@media only screen and (min-width: 0) and (max-width: 1440px){
+
+     @import "cabecera-pantalla-375";
+
+}
+   //0-375
+    body{
+       margin: 0;
+    }
+
+
+    @import "footer-pantalla-375";
+    @import "cuerpo-pantalla-375";
+
+//TABLET >544
+@media only screen and (min-width:540px){
+    body{
+        //background: red;
+    }
+    .owl-stage-outer{
+     height: auto;
+    }
+   @import "cabecera-pantalla-540";
+    @import "cuerpo-pantalla-540";
+}
+//TABLET >768
+@media only screen and (min-width:768px){
+    body{
+        //background: green;
+    }
+}
+//PANTALLA >992
+@media only screen and (min-width:992px){
+    @import "cabecera-pantalla-992";
+    body{
+       //background: red;
+    }
+
+}
+
+@media only screen and (min-width:1200px){
+    body{
+       // background: purple;
+    }
+}
+
+//PANTALLA >1440
+@media only screen and (min-width: 1440px){
+    //cabecera
+    @import "cabecera-pantalla-1440";
+    @import "menu-escritorio";
+}

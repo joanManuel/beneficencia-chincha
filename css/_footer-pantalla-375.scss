@@ -1,0 +1,46 @@
+footer{
+    .linea-adorno{
+        position: absolute;
+        height: 5px;
+        width: 100%;
+        background-color: black;
+    }
+    width: 100%;
+    background-color: #313030;
+    p{
+        color: #fff;
+        text-align: center;
+        font-family: $titulo-lema-family;
+        font-weight: 300;
+    }
+}
+
+
+
+.redes-sociales{
+    width: 100%;
+    .box-redes-sociales{
+        padding: 0;
+    }
+    .facebook{
+        background-color: #3B5998;
+    }
+    .youtube{
+        background-color: #CD201F;
+    }
+    .twitter{
+        background-color: #1DA1F2;
+    }
+    a{
+        padding: 15px;
+        i{
+            font-size: 25px;
+            text-align: center;
+            width: 100%;
+            color: #fff;
+            vertical-align: middle;
+        }
+
+    }
+
+}

@@ -1,0 +1,148 @@
+.cabecera{
+    position: relative;
+    margin-top: 27px;
+    z-index: 50;
+    figure{
+        margin: 0 0 0 0;
+        img{
+
+        }
+    }
+    .ministerio-mujer{
+        width: 217px;
+        height: auto;
+        margin-top: 20px;
+        margin-left: 180px;
+    }
+    .logo{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .titulo-principal{
+        text-align: center;
+        font-family: $titulo-principal-family;
+        font-size: $titulo-principal-size;
+        font-weight: $titutlo-principal-weight;
+        color: $titulo-principal-color;
+        margin: 10px 0 0 0;
+    }
+    .lema{
+        text-align: center;
+        font-family: $titulo-lema-family;
+        font-weight: $titutlo-lema-weight;
+        color: $titulo-lema-color;
+        font-size: $titulo-lema-size;
+        margin: 8px 0 0 0;
+    }
+
+    .menu-movil{
+    }
+.menu-principal{
+        //nav
+    margin-top: 15px;
+        position: relative;
+        z-index: 8;
+        .fa-times{
+            display: none;
+        }
+    }
+    nav{
+        position: relative;
+        font-family: $menu-family;
+        margin: 0 auto;
+        width: 809px;
+        height: 31px;
+        margin-top: 0;//24
+        .menu-prin-movil{
+            //display: block;
+            position: relative;
+            width: 100%;
+            height: auto;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            opacity: 1;
+        }
+        ul{
+            position: relative;
+            font-weight: $menu-weight;
+            font-size: $menu-size;
+            list-style: none;
+            //position: relative;
+            display: flex;
+            justify-content:space-between;
+            padding: 0;
+            margin: 0 auto;
+
+            width: 809px;
+            .contacto{
+                border: 1px solid #08223E;
+                border-radius: 7px;
+                padding: 4px 10px;
+                margin-top: -4px;
+                }
+            li{
+                float: left;
+
+                a{
+                    color: $menu-color;
+                    width: 100%;
+                    text-decoration: none;
+                    padding: 9px 0;
+                    text-align: center;
+                    &:hover{
+                        border-bottom: 1px solid $menu-color;
+                        padding-bottom: 2px;
+                    }
+                }
+
+            }
+        }
+        >ul>li{
+
+        }
+        >ul>li>ul{
+            display: none;
+        }
+        >ul>li>ul>li{
+            display: none;
+        }
+        >ul>li>ul>li>ul{
+            display:none;
+        }
+        >ul>li>ul>li>ul>li{
+            display:none
+        }
+    }
+
+
+
+}
+
+//fondo
+    .fondo-a{
+        position: absolute;
+
+        width: 100%;
+        height: 330px;
+        top: 0;
+        background-image: url(../img/fondo-blanco-a.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        //background-size: cover;
+        z-index: 5;
+        }
+
+    .fondo-b{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 330px;
+        background-image: url(../img/fondo-adorno.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        //background-size: cover;
+        z-index: 2;
+        }
+
