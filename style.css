@@ -36,7 +36,7 @@
     width: 100%; }
   .cabecera .hamburger {
     position: fixed;
-    right: 30px;
+    right: 20px;
     top: 30px;
     z-index: 90;
     border: solid 1px #08223E;
@@ -61,7 +61,7 @@
       top: 0;
       background: #4378AF;
       opacity: 1;
-      width: 100%;
+      width: 97%;
       height: 100%;
       z-index: 9;
       transition-duration: .6s; }
@@ -122,8 +122,6 @@
     .cabecera nav ul {
       font-size: 22px;
       padding: 0;
-      width: 100%;
-      max-width: 345px;
       list-style: none;
       padding-top: 22px;
       padding-left: 30px;
@@ -161,6 +159,8 @@ footer {
     font-family: "Roboto", sans-serif;
     font-weight: 300; }
 
+.redes-sociales .box-redes-sociales {
+  margin-top: 15px; }
 .redes-sociales .facebook {
   background-color: #3B5998; }
 .redes-sociales .youtube {

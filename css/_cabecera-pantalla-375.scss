@@ -52,7 +52,7 @@
     .hamburger{
             position: fixed;
 
-            right: 30px;
+            right: 20px;
             top: 30px;
             z-index: 90;
             border: solid 1px $menu-color;
@@ -88,7 +88,7 @@
             //top: -320px;
             background: $menu-movil-background;
             opacity: 1;
-            width: 100%;
+            width: 97%;
             height: 100%;
             //display: block;
             z-index: 9;
@@ -187,8 +187,8 @@
             font-size: $menu-movil-size;
 
             padding: 0;
-            width: 100%;
-            max-width: 345px;
+            //width: 97%;
+            //max-width: 345px;
             //padding-left: 15px;
             list-style: none;
             padding-top: 22px;
