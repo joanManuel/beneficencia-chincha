@@ -1,18 +1,19 @@
-@media only screen and (min-width: 0) and (max-width: 1440px){
 
-     @import "cabecera-pantalla-375";
-
-}
-   //0-375
+//Generales
     body{
        margin: 0;
     }
+@import "footer-pantalla-375";
+@import "cuerpo-pantalla-375";
 
+@media only screen and (min-width: 0) and (max-width: 1440px){
 
-    @import "footer-pantalla-375";
-    @import "cuerpo-pantalla-375";
+    @import "cabecera-pantalla-375";
 
-@media only screen and (min-width:390px){
+}
+@media only screen and (min-width: 0) and (max-width: 992px){
+
+    @import "menu-pantalla-375";
 
 }
 
