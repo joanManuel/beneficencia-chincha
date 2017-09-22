@@ -18,9 +18,9 @@ footer{
 
 
 .redes-sociales{
-    width: 100%;
+
     .box-redes-sociales{
-        padding: 0;
+
     }
     .facebook{
         background-color: #3B5998;
@@ -32,11 +32,14 @@ footer{
         background-color: #1DA1F2;
     }
     a{
+        display: block;
         padding: 15px;
+        width: 100%;
+
+            text-align: center;
         i{
             font-size: 25px;
-            text-align: center;
-            width: 100%;
+           // width: 100%;
             color: #fff;
             vertical-align: middle;
         }
