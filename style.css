@@ -485,7 +485,7 @@ p {
     width: 100%;
     height: 330px;
     top: 0;
-    background-image: url(../img/fondo-blanco-a.png);
+    background-image: url(img/fondo-blanco-a.png);
     background-repeat: no-repeat;
     background-position: top center;
     z-index: 5; }
@@ -495,7 +495,7 @@ p {
     top: 0;
     width: 100%;
     height: 330px;
-    background-image: url(../img/fondo-adorno.png);
+    background-image: url(img/fondo-adorno.png);
     background-repeat: no-repeat;
     background-position: top center;
     z-index: 2; } }
