@@ -27,7 +27,7 @@ $(function(){
             $('#sub-proc-soc').fadeToggle(500);
              return false;
         });
-    }
+    };
 
     //submenu de programas sociales
 /*
@@ -71,10 +71,10 @@ $(function(){
     });
     $('.play').on('click',function(){
         owl.trigger('play.owl.autoplay',[1000])
-    })
+    });
     $('.stop').on('click',function(){
         owl.trigger('stop.owl.autoplay')
-    })
+    });
 
 
     //owl-carousel-enlaces-externos
