@@ -310,10 +310,12 @@ p {
   .owl-stage-outer {
     height: auto; }
 
-  .owl-carousel .owl-stage-outer .item img {
-    width: 100%;
-    height: auto;
-    vertical-align: middle; }
+  .owl-carousel {
+    margin-top: 20px; }
+    .owl-carousel .owl-stage-outer .item img {
+      width: 100%;
+      height: auto;
+      vertical-align: middle; }
 
   header figure .ministerio-mujer {
     margin-left: 12%; }
@@ -321,6 +323,9 @@ p {
   .cabecera .ministerio-mujer {
     width: 180px;
     height: auto; }
+
+  .fnd-header {
+    margin-top: 30px; }
 
   .galeria-imagen {
     text-align: center; }
@@ -330,6 +335,18 @@ p {
 
   .presidenta p {
     padding-bottom: 45px; } }
+@media only screen and (min-width: 768px) {
+  .hamburger {
+    right: 12%; }
+
+  .menu-animacion {
+    width: 88% !important; }
+
+  .logo {
+    margin-top: -25px !important; }
+
+  .ministerio-mujer {
+    margin-left: 25% !important; } }
 @media only screen and (min-width: 992px) {
   .hamburger {
     display: none; }
@@ -339,6 +356,9 @@ p {
     display: none;
 }
 */
+  .logo {
+    margin-top: 80px !important; }
+
   .menu-principal {
     margin-top: 15px;
     position: relative;
