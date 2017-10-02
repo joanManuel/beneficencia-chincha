@@ -414,7 +414,29 @@ p {
     nav > ul > li > ul > li > ul {
       display: none; }
     nav > ul > li > ul > li > ul > li {
-      display: none; } }
+      display: none; }
+
+  footer .main-footer {
+    padding-top: 42px; }
+  footer .redes-sociales .box-redes-sociales {
+    margin-top: 15px;
+    text-align: center; }
+  footer .redes-sociales .facebook {
+    background: none; }
+  footer .redes-sociales .youtube {
+    background: none; }
+  footer .redes-sociales .twitter {
+    background: none; }
+  footer .redes-sociales a {
+    display: inline;
+    padding: 0;
+    width: auto;
+    text-align: center; }
+    footer .redes-sociales a i {
+      font-size: 30px;
+      color: #fff; }
+  footer .copyright p {
+    margin-top: 0; } }
 @media only screen and (min-width: 1440px) {
   .cabecera {
     position: relative;

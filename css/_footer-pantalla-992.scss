@@ -1,0 +1,50 @@
+footer{
+    .main-footer{
+        padding-top: 42px;
+    }
+.redes-sociales{
+
+    .box-redes-sociales{
+        margin-top: 15px;
+        text-align: center;
+    }
+    .facebook{
+        background: none;
+        //padding-top: 15px;
+        .fa-facebook{
+            //color: #fff;
+
+        }
+    }
+
+    .youtube{
+        background: none;
+        .fa-youtube-play{
+           // color: #CD201F;
+        }
+    }
+    .twitter{
+        background: none;
+        .fa-twitter{
+            //color: #1DA1F2;
+        }
+    }
+    a{
+        display: inline;
+        padding: 0;
+        width: auto;
+
+            text-align: center;
+        i{
+            font-size: 30px;
+            color: #fff;
+            }
+
+        }
+    }
+    .copyright{
+        p{
+            margin-top: 0;
+        }
+    }
+}
