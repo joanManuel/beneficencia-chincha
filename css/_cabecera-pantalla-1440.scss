@@ -13,10 +13,13 @@
         height: auto;
         margin-top: 20px;
         margin-left: 180px;
+        position: absolute;
+        right: 0;
     }
     .logo{
         display: block;
         margin: 0 auto;
+        margin-top: 40px!important;
     }
 
     .titulo-principal{
@@ -42,6 +45,7 @@
 .menu-principal{
         //nav
     margin-top: 15px;
+    margin-bottom: 60px;
         position: relative;
         z-index: 8;
         .fa-times{

@@ -426,10 +426,13 @@ p {
       width: 217px;
       height: auto;
       margin-top: 20px;
-      margin-left: 180px; }
+      margin-left: 180px;
+      position: absolute;
+      right: 0; }
     .cabecera .logo {
       display: block;
-      margin: 0 auto; }
+      margin: 0 auto;
+      margin-top: 40px !important; }
     .cabecera .titulo-principal {
       text-align: center;
       font-family: "Raleway", sans-serif;
@@ -446,6 +449,7 @@ p {
       margin: 8px 0 0 0; }
     .cabecera .menu-principal {
       margin-top: 15px;
+      margin-bottom: 60px;
       position: relative;
       z-index: 8; }
       .cabecera .menu-principal .fa-times {
