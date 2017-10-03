@@ -1,3 +1,6 @@
+header{
+    padding-bottom: 8px;
+}
 .cabecera{
     position: relative;
     margin-top: 27px;
@@ -14,12 +17,12 @@
         margin-top: 20px;
         margin-left: 180px;
         position: absolute;
-        right: 0;
+        right: -13%;
     }
     .logo{
         display: block;
         margin: 0 auto;
-        margin-top: 40px!important;
+        margin-top: 30px!important;
     }
 
     .titulo-principal{
@@ -45,82 +48,13 @@
 .menu-principal{
         //nav
     margin-top: 15px;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
         position: relative;
         z-index: 8;
         .fa-times{
             display: none;
         }
     }
-    nav{
-        position: relative;
-        font-family: $menu-family;
-        margin: 0 auto;
-        width: 809px;
-        height: 31px;
-        margin-top: 0;//24
-        .menu-prin-movil{
-            //display: block;
-            position: relative;
-            width: 100%;
-            height: auto;
-            top: 0;
-            left: 0;
-            z-index: 999;
-            opacity: 1;
-        }
-        ul{
-            position: relative;
-            font-weight: $menu-weight;
-            font-size: $menu-size;
-            list-style: none;
-            //position: relative;
-            display: flex;
-            justify-content:space-between;
-            padding: 0;
-            margin: 0 auto;
-
-            width: 809px;
-            .contacto{
-                border: 1px solid #08223E;
-                border-radius: 7px;
-                padding: 4px 10px;
-                margin-top: -4px;
-                }
-            li{
-                float: left;
-
-                a{
-                    color: $menu-color;
-                    width: 100%;
-                    text-decoration: none;
-                    padding: 9px 0;
-                    text-align: center;
-                    &:hover{
-                        border-bottom: 1px solid $menu-color;
-                        padding-bottom: 2px;
-                    }
-                }
-
-            }
-        }
-        >ul>li{
-
-        }
-        >ul>li>ul{
-            display: none;
-        }
-        >ul>li>ul>li{
-            display: none;
-        }
-        >ul>li>ul>li>ul{
-            display:none;
-        }
-        >ul>li>ul>li>ul>li{
-            display:none
-        }
-    }
-
 
 
 }
@@ -143,7 +77,7 @@
         top: 0;
         width: 100%;
         height: 330px;
-        background-image: url(img/fondo-adorno.png);
+        background: url(img/fondo-adorno.png);
         background-repeat: no-repeat;
         background-position: top center;
         //background-size: cover;

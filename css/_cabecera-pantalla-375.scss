@@ -1,4 +1,10 @@
-
+header ,.fnd-header{
+    background-color: white;
+}
+header{
+    display: block;
+    padding-bottom: 15px;
+}
 .cabecera{
     .colministerio{
         //height: 66px;
@@ -43,7 +49,6 @@
         //width: 120px;
     padding: 0;
     margin: 0;
-    margin-top: 5px;
     background-image: url(img/fondo-menu-movil.png);
 
     width: 100%;

@@ -78,7 +78,45 @@ $(function(){
 
 
     //owl-carousel-enlaces-externos
+    var owl2 = $('.slider-enlace-externo');
+    owl2.owlCarousel({
+                responsive : {
+            // breakpoint from 0 up
+            0 : {
+                items:2,
+                loop:true,
+                margin:10,
+                autoplay:true,
+                autoplayTimeout:5000,
+                autoplayHoverPause:true
+            },
+            // breakpoint from 480 up
+            480 : {
+               items:3,
+                loop:true,
+                margin:10,
+                autoplay:true,
+                autoplayTimeout:5000,
+                autoplayHoverPause:true
+            },
+            // breakpoint from 768 up
+            768 : {
+                items:4,
+                loop:true,
+                margin:10,
+                autoplay:true,
+                autoplayTimeout:5000,
+                autoplayHoverPause:true
+            }
+        }
+    });
     //carousel
+ $('.play').on('click',function(){
+        owl2.trigger('play.owl2.autoplay',[1000])
+    });
+    $('.stop').on('click',function(){
+        owl2.trigger('stop.owl2.autoplay')
+    });
 
 
 

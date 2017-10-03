@@ -1,3 +1,10 @@
+
+body{
+    background: #FAF9F9;
+}
+.main{
+    background-color: white;
+}
 //slider
 .owl-carousel{
         margin-top:10px;
@@ -166,6 +173,35 @@ p{
     }
 }
 
+//seccion consultorio de salud mental
+.consultorio-salud-mental{
+    .imagen-consultorio{
+        //width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    h1{
+
+    }
+
+    figure{
+        text-align: center;
+        img{
+        }
+    }
+    h2{
+        text-align: center;
+    }
+    p{
+    }
+    .fecha-hora{
+        p{
+            margin-top: 0;
+            text-align: center;
+        }
+    }
+}
 .galeria-imagen{
     text-align: center;
     img{
