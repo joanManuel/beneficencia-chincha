@@ -403,18 +403,96 @@ p {
           width: 100%;
           text-decoration: none;
           padding: 9px 0;
-          text-align: center; }
-          nav ul li a:hover {
-            border-bottom: 1px solid #08223E;
-            padding-bottom: 2px; }
+          text-align: center;
+          /*
+          &:hover{
+              border-bottom: 1px solid $menu-color;
+              padding-bottom: 2px;
+          }
+          */ }
+          nav ul li a i {
+            margin-left: 5px; }
+        nav ul li ul {
+          background-color: rgba(49, 48, 48, 0.9); }
+        nav ul li .sub-nosotros {
+          display: none;
+          width: 135px;
+          height: auto;
+          left: 80px; }
+          nav ul li .sub-nosotros li {
+            width: 100%; }
+            nav ul li .sub-nosotros li a {
+              display: block;
+              text-align: left;
+              padding-left: 10px;
+              color: #fff; }
+              nav ul li .sub-nosotros li a:hover {
+                background-color: #C8952B; }
+        nav ul li .sub-servicio {
+          display: none;
+          width: 270px;
+          height: auto;
+          left: 210px; }
+          nav ul li .sub-servicio li {
+            width: 100%; }
+            nav ul li .sub-servicio li a {
+              display: block;
+              text-align: left;
+              padding-left: 10px;
+              color: #fff; }
+              nav ul li .sub-servicio li a:hover {
+                background-color: #C8952B; }
+        nav ul li .sub-proc-soc {
+          display: none;
+          width: 280px;
+          height: auto;
+          left: 320px; }
+          nav ul li .sub-proc-soc li {
+            width: 100%; }
+            nav ul li .sub-proc-soc li a {
+              display: block;
+              text-align: left;
+              padding-left: 10px;
+              color: #fff; }
+              nav ul li .sub-proc-soc li a i {
+                position: absolute;
+                right: 10px; }
+              nav ul li .sub-proc-soc li a:hover {
+                background-color: #C8952B; }
+          nav ul li .sub-proc-soc .sub-tall-prod {
+            display: none;
+            width: 280px;
+            height: auto;
+            left: 280px;
+            top: 42px; }
+            nav ul li .sub-proc-soc .sub-tall-prod li {
+              width: 100%; }
+              nav ul li .sub-proc-soc .sub-tall-prod li a {
+                display: block;
+                text-align: left;
+                padding-left: 10px;
+                color: #fff; }
+                nav ul li .sub-proc-soc .sub-tall-prod li a:hover {
+                  background-color: #C8952B; }
+    nav .nosotros:hover .sub-nosotros {
+      display: block; }
+    nav .servicio:hover .sub-servicio {
+      display: block; }
+    nav .pro-soc:hover .sub-proc-soc {
+      display: block; }
+    nav .tall-prod:hover .sub-tall-prod {
+      display: block; }
     nav > ul > li > ul {
-      display: none; }
+      display: block;
+      position: absolute;
+      margin-top: 5px; }
     nav > ul > li > ul > li {
-      display: none; }
+      display: block; }
     nav > ul > li > ul > li > ul {
-      display: none; }
+      display: block;
+      position: absolute; }
     nav > ul > li > ul > li > ul > li {
-      display: none; }
+      display: block; }
 
   footer .main-footer {
     padding-top: 42px; }

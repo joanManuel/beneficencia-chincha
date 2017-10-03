@@ -64,28 +64,143 @@
                     text-decoration: none;
                     padding: 9px 0;
                     text-align: center;
+                    /*
                     &:hover{
                         border-bottom: 1px solid $menu-color;
                         padding-bottom: 2px;
                     }
+                    */
+                    i{
+                        margin-left: 5px;
+                    }
+                }
+                ul{
+                    background-color: rgba(49,48,48,0.90);
+                }
+                .sub-nosotros{
+                   display: none;
+                    width: 135px;
+                    height: auto;
+                    left: 80px;
+                    li{
+                        width: 100%;
+                        a{
+                            display: block;
+                            text-align: left;
+                            padding-left: 10px;
+                            color: #fff;
+                            &:hover{
+                                background-color: #C8952B;
+                            }
+                        }
+                    }
                 }
 
+                .sub-servicio{
+                    display: none;
+                    width: 270px;
+                    height: auto;
+                    left: 210px;
+                    li{
+                       width: 100%;
+                        a{
+                            display: block;
+                            text-align: left;
+                            padding-left: 10px;
+                            color: #fff;
+                            &:hover{
+                                background-color: #C8952B;
+                            }
+                        }
+                    }
+                }
+                .sub-proc-soc{
+                    display: none;
+                    width: 280px;
+                    height: auto;
+                    left: 320px;
+                    li{
+                       width: 100%;
+                        a{
+                            display: block;
+                            text-align: left;
+                            padding-left: 10px;
+                            color: #fff;
+                            i{
+                                position: absolute;
+                                right: 10px;
+                            }
+                            &:hover{
+                                background-color: #C8952B;
+                            }
+                        }
+                    }
+                    .sub-tall-prod{
+                        display: none;
+                        width: 280px;
+                        height: auto;
+                        left: 280px;
+                        top: 42px;
+                        li{
+                           width: 100%;
+                            a{
+                                display: block;
+                                text-align: left;
+                                padding-left: 10px;
+                                color: #fff;
+
+                                &:hover{
+                                    background-color: #C8952B;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        .nosotros{
+            &:hover .sub-nosotros{
+                display: block;
+            }
+        }
+        .servicio{
+            &:hover .sub-servicio{
+                display: block;
+            }
+        }
+        .pro-soc{
+            &:hover .sub-proc-soc{
+                display: block;
+            }
+        }
+        .tall-prod{
+            &:hover .sub-tall-prod{
+                display: block;
             }
         }
         >ul>li{
 
         }
+
         >ul>li>ul{
-            display: none;
+            display: block;
+            position: absolute;
+            margin-top: 5px;
+            //background: red;
         }
+
         >ul>li>ul>li{
-            display: none;
+            display: block;
+            //position: absolute;
         }
         >ul>li>ul>li>ul{
-            display:none;
+            display:block;
+            position: absolute;
         }
         >ul>li>ul>li>ul>li{
-            display:none
+            display:block;
         }
     }
 
