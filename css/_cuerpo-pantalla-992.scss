@@ -1,0 +1,22 @@
+.contenedor-talleres{
+    .talleres{
+        border: 2px solid transparent;
+        transition: .5s all;
+        &:hover{
+            border: 2px solid $tit_sec_color;
+        }
+    }
+}
+.enlaces-externos{
+    .item{
+        a{
+            img{
+                filter: grayscale(100%);
+                &:hover{
+                filter: grayscale(0);
+                }
+            }
+
+        }
+    }
+}

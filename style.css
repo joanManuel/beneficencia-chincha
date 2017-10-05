@@ -522,6 +522,17 @@ p {
     nav > ul > li > ul > li > ul > li {
       display: block; }
 
+  .contenedor-talleres .talleres {
+    border: 2px solid transparent;
+    transition: .5s all; }
+    .contenedor-talleres .talleres:hover {
+      border: 2px solid #10457C; }
+
+  .enlaces-externos .item a img {
+    filter: grayscale(100%); }
+    .enlaces-externos .item a img:hover {
+      filter: grayscale(0); }
+
   footer .main-footer {
     padding-top: 42px; }
   footer .redes-sociales .box-redes-sociales {
