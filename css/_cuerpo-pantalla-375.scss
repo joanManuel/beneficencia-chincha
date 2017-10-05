@@ -6,13 +6,13 @@ body{
     background-color: white;
 }
 //slider
-.owl-carousel{
-        margin-top:10px;
+.carousel-principal{
+    margin-top: 20px;
+    .item{
+        img{
+            width: 100%;
+        }
     }
-    .owl-stage-outer{
-     //height: 320px;
-    }
-    .owl-dots{
 }
 
 //titulos principales de las secciones
@@ -194,6 +194,7 @@ p{
         text-align: center;
     }
     p{
+
     }
     .fecha-hora{
         p{
@@ -212,10 +213,16 @@ p{
 
 //enlaces externo
 .enlaces-externos{
-    width: 100%;
-    .item{
-        img{
+    margin-top: 20px;
+    padding-bottom: 10px;
+   margin-bottom: 10px;
+    .carousel-enlaces{
+        .item{
+            margin: 0 20px;
+            img{
 
+            }
         }
+
     }
 }

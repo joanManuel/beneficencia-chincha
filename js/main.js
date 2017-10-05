@@ -37,87 +37,67 @@ $(function(){
     });
 */
     //carousel principal
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-                responsive : {
-            // breakpoint from 0 up
-            0 : {
-                items:1,
-                loop:true,
-                margin:10,
-                autoplay:true,
-                autoplayTimeout:5000,
-                autoplayHoverPause:true
-            },
-            // breakpoint from 480 up
-            480 : {
-               items:1,
-                loop:true,
-                margin:10,
-                autoplay:true,
-                autoplayTimeout:5000,
-                autoplayHoverPause:true
-            },
-            // breakpoint from 768 up
-            768 : {
-                items:1,
-                loop:true,
-                margin:10,
-                autoplay:true,
-                autoplayTimeout:5000,
-                autoplayHoverPause:true
-            }
-        }
+    $('.carousel-principal').slick({
+      dots:true,
+         arrows: false,
+        slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
     });
-    $('.play').on('click',function(){
-        owl.trigger('play.owl.autoplay',[1000])
-    });
-    $('.stop').on('click',function(){
-        owl.trigger('stop.owl.autoplay')
-    });
-
 
     //owl-carousel-enlaces-externos
-    var owl2 = $('.slider-enlace-externo');
-    owl2.owlCarousel({
-                responsive : {
-            // breakpoint from 0 up
-            0 : {
-                items:2,
-                loop:true,
-                margin:10,
-                autoplay:true,
-                autoplayTimeout:5000,
-                autoplayHoverPause:true
-            },
-            // breakpoint from 480 up
-            480 : {
-               items:3,
-                loop:true,
-                margin:10,
-                autoplay:true,
-                autoplayTimeout:5000,
-                autoplayHoverPause:true
-            },
-            // breakpoint from 768 up
-            768 : {
-                items:4,
-                loop:true,
-                margin:10,
-                autoplay:true,
-                autoplayTimeout:5000,
-                autoplayHoverPause:true
-            }
-        }
-    });
-    //carousel
- $('.play').on('click',function(){
-        owl2.trigger('play.owl2.autoplay',[1000])
-    });
-    $('.stop').on('click',function(){
-        owl2.trigger('stop.owl2.autoplay')
-    });
-
+    $('.carousel-enlaces').slick({
+  slidesToShow: 4,
+        centerPadding: '60px',
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    variableWidth:true,
+    dots:true,
+    centerMode: true,
+  responsive: [
+  {
+      breakpoint: 992,
+      settings: {
+        arrows: false,
+          dots:true,
+          draggable:true,
+        centerMode: true,
+          variableWidth:true,
+        slidesToShow: 4
+      }
+    }
+      ,
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+          variableWidth:true,
+          dots:true,
+          mobileFirst:true,
+          centerPadding: '60px',
+        slidesToShow: 2
+      }
+    }
+      ,
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+          dots:true,
+          draggable:true,
+          centerPadding: '60px',
+        centerMode: true,
+          variableWidth:true,
+          mobileFirst:true,
+        slidesToShow: 1
+      }
+    }
+  ]
+});
 
 
 });//end
