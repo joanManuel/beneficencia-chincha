@@ -180,6 +180,19 @@ p {
   .enlaces-externos .carousel-enlaces .item {
     margin: 0 20px; }
 
+.secciones section figure {
+  margin: 10px 0; }
+  .secciones section figure img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 540px; }
+
+.directorio .info-directorio h2 {
+  text-align: center; }
+.directorio .info-directorio p {
+  text-align: center; }
+
 @media only screen and (min-width: 0) and (max-width: 1439px) {
   header, .fnd-header {
     background-color: white; }
@@ -389,7 +402,10 @@ p {
       max-width: 240px; }
 
   .presidenta p {
-    padding-bottom: 45px; } }
+    padding-bottom: 45px; }
+
+  .directorio .info-directorio {
+    padding-left: 0; } }
 @media only screen and (min-width: 768px) {
   .hamburger {
     right: 12%; }
@@ -416,6 +432,9 @@ p {
 */
   .logo {
     margin-top: 80px !important; }
+
+  .adorno-movil {
+    display: none; }
 
   .menu-principal {
     margin-top: 15px;
@@ -562,6 +581,11 @@ p {
     filter: grayscale(100%); }
     .enlaces-externos .item a img:hover {
       filter: grayscale(0); }
+
+  .directorio h2 {
+    text-align: left; }
+  .directorio p {
+    text-align: left; }
 
   footer .main-footer {
     padding-top: 42px; }
