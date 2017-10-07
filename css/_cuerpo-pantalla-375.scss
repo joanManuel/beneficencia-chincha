@@ -4,6 +4,14 @@ body{
 }
 .main{
     background-color: white;
+    figure{
+        //margin: 0;
+        //padding: 0;
+        img{
+            //width: 100%;
+            //height: auto;
+        }
+    }
 }
 //slider
 .carousel-principal{
@@ -210,6 +218,7 @@ p{
         //max-width: 240px;
     }
 }
+
 
 //enlaces externo
 .enlaces-externos{

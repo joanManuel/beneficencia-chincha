@@ -1,3 +1,4 @@
+
 .menu-movil{
         position: absolute;
        height: auto;
@@ -31,8 +32,9 @@
         font-family: $menu-movil-family;
         //background: $menu-movil-background;
         font-weight: $menu-movil-weight;
-        position: relative;
+        //position: relative;
        left: 0;
+        overflow: scroll;
         .menu-prin-movil{
 
             //desactivar para que se vea el menu movil
@@ -40,11 +42,12 @@
             left: -500px;
             width: 0;
             height: 0;
+            //max-height: 450px;
             opacity: 0;
         }
         .menu-animacion{
             //position: absolute;
-            position: relative;
+            position:fixed;
             left: 0;
             top: 0;
             //right: -10px;
@@ -52,10 +55,10 @@
             background: $menu-movil-background;
             opacity: 1;
             width: 97%;
-            height: 100%;
-            //display: block;
+            height: 90%;
             z-index: 9;
             transition-duration: .6s;
+            overflow: scroll;
 
         }
 
@@ -77,6 +80,18 @@
            // background-color: $menu-color;
 
         }
+        ul{
+            &::before{
+                content: '';
+                position: absolute;
+                height: 9px;
+                width: 100%;
+                top: 0;
+                left: 0;
+                background-color: #F2B231;
+            }
+
+        }
         ul >li:first-child{
           margin-top: 10px;
 
@@ -88,14 +103,17 @@
         }
         >ul>li{
             position: relative;
-            overflow: hidden;
         }
+        //submenus-nivel-1
         >ul>li>ul{
-            padding: 0;
+            //padding: 0;
             display: none;
             position: relative;
-            padding-left: 15px;
+            transition: .5 all;
+            //padding-left: 15px;
             background-color: $menu-movil-color-submenu;
+            padding: 10px 0 0 15px;
+            margin-top: 5px;
         }
 
         //barra en el submenu
@@ -107,11 +125,10 @@
             background-color: #F2B231;
             opacity: .8;
             left: 0;
+            top: 0;
 
         }
         >ul>li>ul>li{
-            padding-top: 10px;
-            margin-top: 15px;
         }
         >ul>li>ul>li:last-child{
             padding-bottom: 10px;
@@ -121,17 +138,17 @@
         >ul>li>ul>li>ul{
             position: relative;
             padding: 0;
-            padding-left: 15px;
+            padding: 0 0 0 15px;
             background: $menu-color;
             display: none;
-
+            margin-top: 10px;
+            overflow: scroll;
         }
         >ul>li>ul>li>ul>li{
-             padding-top: 10px;
+             padding-top: 8px;
              margin-top: 15px;
         }
         >ul>li>ul>li{
-            overflow: hidden;
         }
         >ul>li>ul>li>ul::before{
             content: '';
@@ -141,6 +158,7 @@
             background-color: #fff;
             opacity: .8;
             left: 0;
+            top: 0;
 
         }
         >ul>li>ul>li>ul>li:last-child{
@@ -150,14 +168,10 @@
             font-size: $menu-movil-size;
 
             padding: 0;
-            //width: 97%;
-            //max-width: 345px;
-            //padding-left: 15px;
             list-style: none;
             padding-top: 22px;
             padding-left: 30px;
             padding-bottom: 44px;
-
             li{
                 margin-top: 30px;
                 a{
@@ -170,5 +184,36 @@
                 }
             }
         }
+        .adorno-movil{
+            position:relative;
+            //margin: 0 0 0 0;
+            left: -15px;
+            text-align: center;
+            height: auto;
+            top: calc(100% - 374px);
+            img{
+            }
+            .linea-adorno{
+                position: relative;
+                width: 100%;
+                height: 5px;
+                background-color: #F2B231;
+                left: 0;
+                margin: 0;
+                padding: 0;
+            }
+        }
     }
+
+@media only screen and (max-height: 500px){
+    .adorno-movil{
+        top: 0;
+        bottom: 0;
+        position: static!important;
+        left: 15px;
+        .linea-adorno{
+            display: none;
+        }
+    }
+}
 

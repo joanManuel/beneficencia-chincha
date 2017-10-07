@@ -16,16 +16,26 @@ $(function(){
 
         //menu del responsive
         $('#nosotros').on('click',function(){
-            $('#sub-nosotros').fadeToggle(500);
+            $('#sub-nosotros').slideToggle(500);
              return false;
         });
+
         $('#servicio').on('click',function(){
-            $('#sub-servicio').fadeToggle(500);
+            $('#sub-servicio').slideToggle(500);
              return false;
         });
         $('#pro-soc').on('click',function(){
-            $('#sub-proc-soc').fadeToggle(500);
+            $('#sub-proc-soc').slideToggle(500);
              return false;
+        });
+        $('#tall-prod').on('click',function(){
+            $('#sub-tall-prod').slideToggle(500);
+             return false;
+        });
+
+        //para poder dar click a los item
+        $("ul").on('click',function(p){
+            p.stopPropagation();
         });
     };
 
