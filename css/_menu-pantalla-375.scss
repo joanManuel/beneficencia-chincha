@@ -28,25 +28,9 @@
             border: none;
             background-color: transparent;
     }
-    nav{
-        font-family: $menu-movil-family;
-        //background: $menu-movil-background;
-        font-weight: $menu-movil-weight;
-        //position: relative;
-       left: 0;
-        overflow: scroll;
-        .menu-prin-movil{
-
-            //desactivar para que se vea el menu movil
-
-            left: -500px;
-            width: 0;
-            height: 0;
-            //max-height: 450px;
-            opacity: 0;
-        }
-        .menu-animacion{
+.menu-animacion{
             //position: absolute;
+            //display: block;
             position:fixed;
             left: 0;
             top: 0;
@@ -61,6 +45,29 @@
             overflow: scroll;
 
         }
+    nav{
+        font-family: $menu-movil-family;
+        //background: $menu-movil-background;
+        font-weight: $menu-movil-weight;
+        //position: relative;
+       //left: 0;
+        left: -500px;
+        overflow: scroll;
+         width: 0;
+            height: 0;
+        opacity: 0;
+        margin-top: 20px;
+        .menu-prin-movil{
+
+            //desactivar para que se vea el menu movil
+            //display: none;
+
+           // width: 0;
+            //height: 0;
+            //max-height: 450px;
+            //opacity: 0;
+        }
+
 
 
         .hamburger-box{
@@ -73,14 +80,11 @@
         }
         .hamburger-inner, .hamburger-inner::after, .hamburger-inner::before{
             width: 35px;
-            //desactivado
-            //background-color: #fff;
-
-            //activado
-           // background-color: $menu-color;
 
         }
         ul{
+            padding-bottom: 0;
+            margin-bottom: 0;
             &::before{
                 content: '';
                 position: absolute;
@@ -190,16 +194,25 @@
             left: -15px;
             text-align: center;
             height: auto;
-            top: calc(100% - 374px);
+            top: 58px;
+
             img{
+                position: relative;
+                margin: 0;
+                top: -20px;
+                z-index: 2;
             }
             .linea-adorno{
-                position: relative;
-                width: 100%;
-                height: 5px;
-                background-color: #F2B231;
+                position: absolute;
+               z-index: 1;
+               // background-color: #F2B231;
                 left: 0;
-                margin: 0;
+                width: 100%;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+                bottom: 0;
                 padding: 0;
             }
         }
@@ -207,12 +220,15 @@
 
 @media only screen and (max-height: 500px){
     .adorno-movil{
-        top: 0;
         bottom: 0;
         position: static!important;
         left: 15px;
+        margin-left: -25px;
+        img{
+            top: 0!important;
+        }
         .linea-adorno{
-            display: none;
+            display: none!important;
         }
     }
 }

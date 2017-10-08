@@ -6,7 +6,7 @@ $(function(){
     if(ancho<= 992){
         //Menu Responsive
         $('.hamburger').on('click',function(){
-            $('.menu-prin-movil').toggleClass('menu-animacion');
+            $('nav').toggleClass('menu-animacion');
             $('.hamburger').toggleClass('hamburger-animation');
             $('.hamburger').toggleClass('is-active');
 
@@ -109,5 +109,11 @@ $(function(){
   ]
 });
 
+  lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'albumLabel':false,
+      'alwaysShowNavOnTouchDevices':true
+    })
 
 });//end

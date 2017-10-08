@@ -13,14 +13,15 @@
     <!-- endfavicon /-->
 
     <link rel="stylesheet" href="css/font-awesome.min.css">
-
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="fonts/slick.ttf">
-     <link rel="stylesheet" href="css/hamburgers.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
+    <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="style.css">
-     <sript src="js/modernizr-custom.js"></sript>
+    <sript src="js/modernizr-custom.js"></sript>
+
 </head>
 <body>
     <header class="container-fluid cabecera">
@@ -103,7 +104,17 @@
                                 <li class="contacto"><a  href="#">CONTÁCTENOS</a></li>
                             <div class="adorno-movil">
                                 <img src="img/logo-principal.png" alt="">
-                                <div class="linea-adorno"></div>
+                                <svg class="linea-adorno" viewBox="0 0 570 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <desc>Created with Sketch.</desc>
+                                    <defs></defs>
+                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Tablets-600" transform="translate(-30.000000, -736.000000)" fill="#F2B231">
+                                            <g transform="translate(0.000000, 340.000000)">
+                                                <path d="M300,402.32834 C342.608942,394.068627 382.332932,394.813619 419.171971,404.563316 C436.296703,409.09549 460.581142,420.271824 492.025288,438.092317 L30,438.092317 C137.680727,428.268704 227.680727,416.347378 300,402.32834 Z" id="Combined-Shape"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
                             </div>
                             </ul>
                         </nav>
@@ -208,7 +219,10 @@
                                         <figure>
                                             <img src="img/cosmetologia.jpg" alt="">
                                         </figure>
-                                        <div class="adorno-tall"></div>
+                                        <svg class="adorno-tall">
+
+                                        </svg>
+
                                     </article>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-lg-6">
@@ -327,7 +341,7 @@
                 <aside class="row">
                     <div class="col-12">
                           <div class="presidenta">
-                                <h1>Presidenta</h1>
+                                <h1>Presidente</h1>
                                <figure>
                                    <img src="img/foto_presidenta.png" alt="">
                                </figure>
@@ -386,14 +400,30 @@
         <div class="row justify-content-between">
             <section class="galeria-imagen col-12">
                 <h1>Galería de imágenes</h1>
-                <img src="img/paisajes.jpg" alt="">
-                <img src="img/paisajes.jpg" alt="">
-                <img src="img/paisajes.jpg" alt="">
-                <img src="img/paisajes.jpg" alt="">
-                <img src="img/paisajes.jpg" alt="">
-                <img src="img/paisajes.jpg" alt="">
-                <img src="img/paisajes.jpg" alt="">
-                <img src="img/paisajes.jpg" alt="">
+                <a href="img/paisajes.jpg" data-lightbox="roadtrip" data-lightbox="image-1">
+                    <img src="img/paisajes.jpg" alt="">
+                </a>
+                <a href="img/paisajes.jpg" data-lightbox="roadtrip" data-lightbox="image-1">
+                    <img src="img/paisajes.jpg" alt="">
+                </a>
+                <a href="img/paisajes.jpg" data-lightbox="roadtrip" data-lightbox="image-1">
+                    <img src="img/paisajes.jpg" alt="">
+                </a>
+                <a href="img/paisajes.jpg" data-lightbox="roadtrip" data-lightbox="image-1">
+                    <img src="img/paisajes.jpg" alt="">
+                </a>
+                <a href="img/paisajes.jpg" data-lightbox="roadtrip" data-lightbox="image-1">
+                    <img src="img/paisajes.jpg" alt="">
+                </a>
+                <a href="img/paisajes.jpg" data-lightbox="roadtrip" data-lightbox="image-1">
+                    <img src="img/paisajes.jpg" alt="">
+                </a>
+                <a href="img/paisajes.jpg" data-lightbox="roadtrip" data-lightbox="image-1">
+                    <img src="img/paisajes.jpg" alt="">
+                </a>
+                <a href="img/paisajes.jpg" data-lightbox="roadtrip" data-lightbox="image-1">
+                    <img src="img/paisajes.jpg" alt="">
+                </a>
             </section>
         </div>
     <!-- Enlaces Externos  -->
@@ -458,6 +488,7 @@
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
     <script src="js/main.js"></script>
 
 
