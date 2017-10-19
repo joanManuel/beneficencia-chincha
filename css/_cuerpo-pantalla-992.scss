@@ -1,9 +1,9 @@
 .contenedor-talleres{
     .talleres{
         border: 2px solid transparent;
-        transition: .5s all;
+        transition: .4s all;
         &:hover{
-            border: 2px solid $tit_sec_color;
+            box-shadow: 0 1px 4px $tit_sec_color;
         }
     }
 }

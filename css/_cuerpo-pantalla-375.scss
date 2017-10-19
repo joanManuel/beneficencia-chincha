@@ -13,6 +13,9 @@ body{
         }
     }
 }
+.center{
+    text-align: center;
+}
 //slider
 .carousel-principal{
     margin-top: 20px;
@@ -237,6 +240,9 @@ p{
     }
 }
 .secciones{
+    img{
+        width: 100%;
+    }
     section{
         figure{
             margin: 10px 0;
@@ -259,4 +265,36 @@ p{
         }
     }
 
+}
+//tablas
+.table{
+    font-family: Helvetica;
+    font-weight: 300;
+    text-align: center;
+    border-spacing: 0;
+    thead{
+
+    }
+    tr{
+
+        &:nth-child(even){
+            background-color: rgba(#eee,.4);
+        }
+        &:nth-child(odd){
+
+        }
+        td{
+
+            border-top: 1px solid #ECEEEF;
+            margin: 0;
+            //border-bottom: 1px solid #ECEEEF;
+            padding: 8px;
+        }
+    }
+    th,td{
+        //border-collapse: collapse;
+        //border-spacing: 0;
+        width: 50%;
+        border-collapse: collapse;
+    }
 }
